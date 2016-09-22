@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>组件测试页面</title>
+    <link rel="stylesheet" href="http://design.yyuap.com/static/uui/latest/css/u.css"/>
+    <link rel="stylesheet" href="http://design.yyuap.com/static/uui/latest/css/grid.css"/>
+    <link rel="stylesheet" href="http://design.yyuap.com/static/uui/latest/css/tree.css"/>
+
+  </head>
+
+  <body>
+    <div class="hello" u-meta='{"id":"umonth","type":"u-month","data":"dt1","field":"f1"}'>
+        <input class="u-input"/>
+    </div>
+    <script src="http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js"></script>
+    <script src="http://design.yyuap.com/static/knockout/knockout-3.2.0.debug.js"></script>
+    <script src="http://design.yyuap.com/static/uui/latest/js/u.js"></script>
+    <script src="http://design.yyuap.com/static/uui/latest/js/u-polyfill.js"></script>
+    <script src="http://design.yyuap.com/static/uui/latest/js/u-grid.js"></script>
+    <script src="http://design.yyuap.com/static/uui/latest/js/u-tree.js"></script>
+    <script>
+      var app, viewModel;
+      viewModel = {
+          dt1: new u.DataTable({
+              meta: {
+                  f1: {}
+              }
+          }),
+      };
+
+      /**
+       * app 创建框架服务
+       * el 指定服务对应的顶层DOM
+       * model 指定服务对应的数据模型
+       */
+      app = u.createApp({
+          el: 'body',
+          model: viewModel
+      });
+
+      // 创建空行,绑定默认值
+      var r = viewModel.dt1.createEmptyRow();
+      r.setValue('f1', "11");
+      viewModel.dt1.setRowSelect(0);
+    </script>
+
+  </body>
+</html>
