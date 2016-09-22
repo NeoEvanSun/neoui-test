@@ -8,7 +8,7 @@ describe('The test case for data',function(){
   var driver;
   this.timeout(20000);
   before(function(){
-    driver = new webdriver.Builder().withCapabilities(webdriver.Capabilities.chrome()).build();
+    driver = new webdriver.Builder().withCapabilities(webdriver.Capabilities.firefox()).build();
   })
   after(function(){
     driver.quit();
