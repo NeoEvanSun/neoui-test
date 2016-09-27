@@ -1,0 +1,9 @@
+
+[0m[0m
+[0m  The test case for data[0m
+  [32m  ✓[0m[90m tesst the data page for firefox[0m[31m (3405ms)[0m
+  [32m  ✓[0m[90m tesst the data page for chrome[0m[31m (1714ms)[0m
+
+
+[92m [0m[32m 2 passing[0m[90m (5s)[0m
+
