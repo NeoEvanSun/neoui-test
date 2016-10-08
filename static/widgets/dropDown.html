@@ -15,6 +15,12 @@
         </div>
     </div>
 
+    <div class="u-combo mutil-select" id="combo3">
+        <div class="u-input-group u-has-feedback">
+            <input class="u-form-control" />
+            <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
+        </div>
+    </div>
     <script src="http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js"></script>
     <script src="http://design.yyuap.com/static/knockout/knockout-3.2.0.debug.js"></script>
     <script src="http://design.yyuap.com/static/uui/latest/js/u.js"></script>
@@ -24,6 +30,7 @@
     <script>
       u.compMgr.updateComp();
       document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男'},{value:'02',name:'女'}]);
+      document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'java'},{value:'02',name:'javascript'},{value:'03',name:'C'},{value:'04',name:'C++'}]);
     </script>
   </body>
 </html>
