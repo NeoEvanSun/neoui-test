@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node startserver",
-    "test": "./node_modules/mocha/bin/mocha ./tests/datatest.js",
+    "test": "./node_modules/mocha/bin/mocha ./tests/datatest.js"
   },
   "author": "",
   "license": "ISC",

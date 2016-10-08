@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>dropdown测试页面</title>
+    <link rel="stylesheet" href="http://design.yyuap.com/static/uui/latest/css/u.css"/>
+    <link rel="stylesheet" href="http://design.yyuap.com/static/uui/latest/css/grid.css"/>
+    <link rel="stylesheet" href="http://design.yyuap.com/static/uui/latest/css/tree.css"/>
+  </head>
+  <body>
+    <div class="u-combo" id="combo1">
+        <div class="u-input-group u-has-feedback">
+            <input class="u-form-control" />
+            <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
+        </div>
+    </div>
+
+    <script src="http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js"></script>
+    <script src="http://design.yyuap.com/static/knockout/knockout-3.2.0.debug.js"></script>
+    <script src="http://design.yyuap.com/static/uui/latest/js/u.js"></script>
+    <script src="http://design.yyuap.com/static/uui/latest/js/u-polyfill.js"></script>
+    <script src="http://design.yyuap.com/static/uui/latest/js/u-grid.js"></script>
+    <script src="http://design.yyuap.com/static/uui/latest/js/u-tree.js"></script>
+    <script>
+      u.compMgr.updateComp();
+      document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男'},{value:'02',name:'女'}]);
+    </script>
+  </body>
+</html>
